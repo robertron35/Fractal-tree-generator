@@ -24,16 +24,6 @@ function branch(len){
         branch(len*0.67);
         pop();
         push();
-        rotate(angle/2);
-        stroke('hsla(38, 81%, 62%, 1)');
-        branch(len*0.67);
-        pop();
-        push();
-        rotate(-angle/2);
-        stroke('hsla(38, 81%, 62%, 1)');
-        branch(len*0.67);
-        pop();
-        push();
         rotate(-angle);
         stroke('hsl(160, 100%, 50%)');
         branch(len*0.67);
