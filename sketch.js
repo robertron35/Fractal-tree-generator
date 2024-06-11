@@ -17,9 +17,19 @@ function draw() {
 function branch(len){
     line(0, 0, 0, -len);
     translate(0, -len);
-    if(len > 4){
+    if(len > 6){
         push();
         rotate(angle);
+        stroke('hsla(38, 81%, 62%, 1)');
+        branch(len*0.67);
+        pop();
+        push();
+        rotate(angle/2);
+        stroke('hsla(38, 81%, 62%, 1)');
+        branch(len*0.67);
+        pop();
+        push();
+        rotate(-angle/2);
         stroke('hsla(38, 81%, 62%, 1)');
         branch(len*0.67);
         pop();
