@@ -1,9 +1,10 @@
-var t = 800;
+var t = 600;
 var angle = 0;
 
 function setup() {
     createCanvas(t, t);
-    slider = createSlider(0, TWO_PI, PI/4, 0.01);
+    slider = createSlider(0, TWO_PI, PI/4, 0.005);
+    slider.style('width', t-3 + 'px')
 }
 
 function draw() {
@@ -17,7 +18,7 @@ function draw() {
 function branch(len){
     line(0, 0, 0, -len);
     translate(0, -len);
-    if(len > 6){
+    if(len > 4){
         push();
         rotate(angle);
         stroke('hsla(38, 81%, 62%, 1)');
